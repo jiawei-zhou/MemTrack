@@ -13,13 +13,13 @@ The testing datasets are avalible in:[SatSOT](http://www.csu.cas.cn/gb/kybm/sjly
 The training dataset contains four commonly used datasets for general video object tracking in the field of computer vision, which can be easily obtained from the official websites of their respective datasets.
 
 # 3. Install the environment
-In this work, we use python=3.10 and torch==2.3.1+cu118. The specific installation packages are listed in conda_environment.yaml, which can be installed in the following way:
-> Install the environment option1
+In this work, we use python=3.10 and torch==2.3.1+cu118 or torch==2.3.1+cu12.1. The specific installation packages are listed in conda_environment.yaml, which can be installed in the following way:
+> Install the environment option1 torch==2.3.1+cu118
 ```python 
 conda env create -f conda_environment.yml
 ```
 Or manually create the Python environment, and then install other packages，which can be installed in the following way:
-> Install the environment option2
+> Install the environment option2 torch==2.3.1+cu12.1
 ```python 
 conda create -n MemTrack python=3.10
 conda activate droptrack
