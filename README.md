@@ -11,6 +11,12 @@ Table. 1. Performance comparison of trackers across different datasets. The best
 # 2. Dataset preparation
 The testing datasets are avalible in:[SatSOT](http://www.csu.cas.cn/gb/kybm/sjlyzx/gcxx_sjj/sjj_wxxl/202106/t20210607_6080256.html)，[SV248S](https://github.com/xdai-dlgvv/SV248S)，[OOTB](https://github.com/YZCU/OOTB) and [VISO](https://github.com/QingyongHu/VISO), which are all large public real satellite video datasets. Due to lack of offical json files (SV248S,OOTB and VISO), we create the specifical `json files` for datasets and the corresponding `dataset.py` files . <br>
 The training dataset contains four commonly used datasets for general video object tracking in the field of computer vision, which can be easily obtained from the official websites of their respective datasets.
+```python 
+GOT10K
+LaSOT
+TrackingNet
+WebUAV3M
+```
 
 # 3. Install the environment
 In this work, we use python=3.10 and torch==2.3.1+cu118 or torch==2.3.1+cu12.1. The specific installation packages are listed in conda_environment.yaml, which can be installed in the following way:
