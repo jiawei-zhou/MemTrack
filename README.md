@@ -1,7 +1,7 @@
 # 1. MemTrack:Utilizing the Temporal Memory Transformer Network for Satellite Video Object Tracking,
 The code will be opened soon. The MemTrack framework is as follows:
 ![image](framework.jpg)
-<font size=5>Fig. 1. The overall framework of the proposed MemTrack.</font>  <br>
+<font size=4>Fig. 1. The overall framework of the proposed MemTrack.</font>  <br>
 
 Experimental results demonstrate the superior performance of our method. <br>
 Table. 1. Performance comparison of trackers across different datasets. The best results are highlighted in red, the second-place with blue and the third-place with green.
