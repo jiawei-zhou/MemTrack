@@ -1,0 +1,26 @@
+class EnvironmentSettings:
+    def __init__(self):
+        self.workspace_dir = '/home/zhoujiawei/clean_code/MemTrack'    # Base directory for saving network checkpoints.
+        self.tensorboard_dir = '/home/zhoujiawei/clean_code/MemTrack/tensorboard'    # Directory for tensorboard files.
+        self.pretrained_networks = '/home/zhoujiawei/clean_code/MemTrack/pretrained_networks'
+        self.lasot_dir = '/home/zhoujiawei/train_dataset/LaSOT/LaSOT/LaSOTBenchmark'
+        self.got10k_dir = '/home/zhoujiawei/train_dataset/GOT-10K/unzip/train_data'
+        self.got10k_val_dir = '/home/zhoujiawei/train_dataset/GOT-10K/unzip/val_data'
+        self.lasot_lmdb_dir = '/home/zhoujiawei/clean_code/MemTrack/lasot_lmdb'
+        self.got10k_lmdb_dir = '/home/zhoujiawei/clean_code/MemTrack/got10k_lmdb'
+        self.trackingnet_dir = '/home/zhoujiawei/train_dataset/TrackingNet/unzip'
+        self.trackingnet_lmdb_dir = '/home/zhoujiawei/clean_code/MemTrack/trackingnet_lmdb'
+        self.coco_dir = '/home/zhoujiawei/clean_code/MemTrack/coco'
+        self.coco_lmdb_dir = '/home/zhoujiawei/clean_code/MemTrack/coco_lmdb'
+        self.lvis_dir = ''
+        self.sbd_dir = ''
+        self.imagenet_dir = '/home/zhoujiawei/clean_code/MemTrack/vid'
+        self.imagenet_lmdb_dir = '/home/zhoujiawei/clean_code/MemTrack/vid_lmdb'
+        self.imagenetdet_dir = ''
+        self.ecssd_dir = ''
+        self.hkuis_dir = ''
+        self.msra10k_dir = ''
+        self.davis_dir = ''
+        self.youtubevos_dir = ''
+        self.webuav3m_dir = '/home/zhoujiawei/train_dataset/WebUAV-3M/Train'
+        self.webuav3m_val_dir = '/home/zhoujiawei/train_dataset/WebUAV-3M/Val'
