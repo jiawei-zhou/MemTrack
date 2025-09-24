@@ -40,18 +40,14 @@ The training dataset contains four commonly used datasets for general video obje
 ```
 
 # 2. Install the environment
-In this work, we use python=3.10 and torch==2.3.1+cu118 or torch==2.3.1+cu12.1. The specific installation packages are listed in conda_environment.yaml, which can be installed in the following way:
-> Install the environment option1 torch==2.3.1+cu118
+In this work, we use python=3.10 and torch==2.3.1+cu12.1. <bar>
+Manually create the Python environment, and then install other packages，which can be installed in the following way:
+> Install the environment torch==2.3.1+cu12.1
 ```python 
-modified prefix path in conda_environment
-conda env create -f conda_environment.yaml
-```
-Or manually create the Python environment, and then install other packages，which can be installed in the following way:
-> Install the environment option2 torch==2.3.1+cu12.1
-```python 
-conda create -n MemTrack python=3.10
-conda activate MemTrack
-pip install -r requirements.txt
+1. conda create -n MemTrack python=3.10
+2. conda activate MemTrack
+3. pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu121
+4. pip install -r requirements.txt
 ```
 ## Set project paths
 Run the following command to set paths for this project
