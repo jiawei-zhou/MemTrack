@@ -93,6 +93,12 @@ python tracking/test.py
 -- sequence None \ # test sequences in the specified dataset
 ```
 
+> search hyperparameters
+```
+1. modified the epoches of checkpoints or tp_nums or memory_nums
+2. python tracking/test_epoch.py
+```
+
 > run evaluate
 ```
 1. modified the name, parameter_name and dataset name in analysis_results
