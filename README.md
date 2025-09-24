@@ -44,7 +44,7 @@ In this work, we use python=3.10 and torch==2.3.1+cu118 or torch==2.3.1+cu12.1. 
 > Install the environment option1 torch==2.3.1+cu118
 ```python 
 modified prefix path in conda_environment
-conda env create -f conda_environment.yml
+conda env create -f conda_environment.yaml
 ```
 Or manually create the Python environment, and then install other packages，which can be installed in the following way:
 > Install the environment option2 torch==2.3.1+cu12.1
