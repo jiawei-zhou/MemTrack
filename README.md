@@ -72,7 +72,7 @@ python tracking/train.py --script memtrack --config memtrack_384_full --save_dir
 
 > run two stage training
 ```python 
-1. modified the PRETRAIN_PTH in [yaml file](/experiments/memtrack_seq/memtrack_seq_384_full.yaml)
+1. modified the PRETRAIN_PTH in experiments/memtrack_seq/memtrack_seq_384_full.yaml
 2. python tracking/train.py --script memtrack --config memtrack_384_full --save_dir ./output --mode multiple --nproc_per_node 4 --use_wandb 1
 ```
 
