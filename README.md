@@ -82,15 +82,15 @@ Put the downloaded checkpoints under [./output/checkpoints/train/memtrack_seq/me
 > run testing
 ```
 python tracking/test.py 
--- tracker_name memtrack_seq  
--- tracker_param memtrack_seq_384_full 
--- dataset satsot sv248s viso ootb 
--- threads 1
--- num_gpu 1
--- debug 0
--- tracker_cls None # different tracker [without_tp,kalman]
--- save_name None # results saving name
--- sequence None # test sequences in the specified dataset
+-- tracker_name memtrack_seq \
+-- tracker_param memtrack_seq_384_full \
+-- dataset satsot sv248s viso ootb \
+-- threads 1 \
+-- num_gpu 1 \
+-- debug 0 \
+-- tracker_cls None \ # different tracker [without_tp,kalman]
+-- save_name None \ # results saving name
+-- sequence None \ # test sequences in the specified dataset
 ```
 
 > run evaluate
