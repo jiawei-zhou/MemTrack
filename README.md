@@ -13,7 +13,7 @@ Table. 1. Performance comparison of trackers across different datasets. The best
 ![image](table_result.png)
 
 # 1. Dataset preparation
-The testing datasets are avalible in:[SatSOT](http://www.csu.cas.cn/gb/kybm/sjlyzx/gcxx_sjj/sjj_wxxl/202106/t20210607_6080256.html)，[SV248S](https://github.com/xdai-dlgvv/SV248S)，[OOTB](https://github.com/YZCU/OOTB) and [VISO](https://github.com/QingyongHu/VISO), which are all large public real satellite video datasets. Due to lack of offical json files (SV248S,OOTB and VISO), we create the specifical `json files` for datasets, which can be donwload in [baiduyun](https://pan.baidu.com/s/163glyhr5LYR8HC62Ueiy8Q?pwd=jn7c)(code:jn7c) or [google driver](https://drive.google.com/file/d/1T5T77KByGbBTX06uN4_KP4WoZLdDkRxA/view?usp=sharing) and the corresponding `dataset.py` files. Put the json files into coresponding dataset path.
+The testing datasets are avalible in:[SatSOT](http://www.csu.cas.cn/gb/kybm/sjlyzx/gcxx_sjj/sjj_wxxl/202106/t20210607_6080256.html)，[SV248S](https://github.com/xdai-dlgvv/SV248S)，[OOTB](https://github.com/YZCU/OOTB) and [VISO](https://github.com/QingyongHu/VISO), which are all large public real satellite video datasets. Due to lack of offical json files (SV248S,OOTB and VISO), we create the specifical `json files` for datasets, which can be donwload in [baiduyun](https://pan.baidu.com/s/163glyhr5LYR8HC62Ueiy8Q?pwd=jn7c) or [google driver](https://drive.google.com/file/d/1T5T77KByGbBTX06uN4_KP4WoZLdDkRxA/view?usp=sharing) and the corresponding `dataset.py` files. Put the json files into coresponding dataset path.
 ```python 
 --SV248S
   -- 01
@@ -30,13 +30,13 @@ The testing datasets are avalible in:[SatSOT](http://www.csu.cas.cn/gb/kybm/sjly
     --sot
       --VISO_test.json
 ```
-<br>
+
 The training dataset contains four commonly used datasets for general video object tracking in the field of computer vision, which can be easily obtained from the official websites of their respective datasets.
 ```python 
-GOT10K
-LaSOT
-TrackingNet
-WebUAV3M
+--GOT10K
+--LaSOT
+--TrackingNet
+--WebUAV3M
 ```
 
 # 2. Install the environment
