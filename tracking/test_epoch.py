@@ -35,8 +35,8 @@ def run_tracker(tracker_name, tracker_param, run_id=None, dataset_name='otb', se
 
 
 def main(state):
-    tracker_name = 'histrack_seq'
-    tracker_param = 'histrack_seq_384_full'
+    tracker_name = 'memtrack_seq'
+    tracker_param = 'memtrack_seq_384_full'
     dataset_name = ['satsot','sv248s']
     threads = 0
     num_gpus = 1
@@ -80,7 +80,7 @@ def set_state(state,tracker_name, tracker_param):
         yaml.dump(doc, f)
 
 if __name__ == '__main__':
-    # ckpt_epochs = os.listdir('/home/zhoujiawei/my_model/MemTrack/output/checkpoints/train/histrack_seq/histrack_seq_384_full')
+    # ckpt_epochs = os.listdir('/home/zhoujiawei/my_model/MemTrack/output/checkpoints/train/memtrack_seq/memtrack_seq_384_full')
     # epochs = sorted([str(ckpt.split('ep')[-1].split('.')[0]) for ckpt in ckpt_epochs])
     # print(epochs)
     tp_nums = torch.arange(30,85,5).tolist()

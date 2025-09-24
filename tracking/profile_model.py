@@ -20,9 +20,9 @@ def parse_args():
     """
     parser = argparse.ArgumentParser(description='Parse args for training')
     # for train
-    parser.add_argument('--script', type=str, default='histrack_seq', choices=['aqatrack'],
+    parser.add_argument('--script', type=str, default='memtrack_seq', choices=['aqatrack'],
                         help='training script name')
-    parser.add_argument('--config', type=str, default='histrack_seq_384_full', help='yaml configure file name')
+    parser.add_argument('--config', type=str, default='memtrack_seq_384_full', help='yaml configure file name')
     args = parser.parse_args()
 
     return args
@@ -103,9 +103,9 @@ if __name__ == "__main__":
     z_sz = cfg.TEST.TEMPLATE_SIZE
     x_sz = cfg.TEST.SEARCH_SIZE
 
-    if args.script == "histrack_seq":
+    if args.script == "memtrack_seq":
         model_module = importlib.import_module('lib.models')
-        model_constructor = model_module.build_histrack_seq
+        model_constructor = model_module.build_memtrack_seq
         model = model_constructor(cfg, training=False)
         # get the template and search
         template = torch.randn(bs, 3, z_sz, z_sz)
