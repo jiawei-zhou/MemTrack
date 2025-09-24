@@ -66,8 +66,6 @@ lib/train/admin/local.py  # paths about training
 lib/test/evaluation/local.py  # paths about testing
 ```
 
-<br>
-
 # 3. Training
 Download [pre-trained weights](https://drive.google.com/file/d/1l0YSK0QLPGVIGiNXwlaWp5uhIkJawJqh/view) and put it under [./pretrained](pretrained) <br>
 
@@ -75,7 +73,7 @@ Download [pre-trained weights](https://drive.google.com/file/d/1l0YSK0QLPGVIGiNX
 ```python 
 python tracking/train.py --script memtrack --config memtrack_384_full --save_dir ./output --mode multiple --nproc_per_node 4 --use_wandb 1
 ```
-<br>
+
 > run two stage training
 ```python 
 1. modified the PRETRAIN_PTH in [yaml file](experiments/memtrack_seq/memtrack_seq_384_full.yaml)
@@ -98,14 +96,12 @@ python tracking/test.py
 -- save_name None # results saving name
 -- sequence None # test sequences in the specified dataset
 ```
-<br>
 
 > run evaluate
 ```
 1. modified the name, parameter_name and dataset name in analysis_results
 2. python tracking/analysis_results.py
 ```
-<br>
 
 > test FLOPs, Params and Speed
 ```
